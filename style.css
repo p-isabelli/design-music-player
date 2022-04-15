@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lateral-esquerda{
+    background-color: #190028;
+    height: 100vh;
+    width: 20%;
+    min-width: 220px;
+    min-height: 550px;
+}
+
+.container-esquerda{
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 20px;
+    color: #fff;
+}
+
+.container-esquerda img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    object-fit: cover;
+    box-shadow: 0 0 1em #45036c;
+}
+
+.container-esquerda h1{
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.container-esquerda small{
+    font-size: 0.8em;
+    line-height: 5px;
+    text-align: center;
+    color: rgb(176, 168, 168);
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.container-esquerda i{
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.container-esquerda p{
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+.container-esquerda p:hover, .mscs p:hover, .plano i:hover, 
+.musica01 p:hover, .msc-ouvindo p:hover, .botoes-musica i:hover, .musica01 i:hover {
+    color: #f72585;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.container-esquerda h3{
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: rgb(176, 168, 168);
+    text-align: center;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+#botao{
+    display: none;
+}
+
+#lateral-direita{
+    height: 100vh;
+    min-height: 500px;
+    width: 80%;
+    background-color: #11001c;
+}
+
+.container-direita{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 25px;
+    height: 50vh;
+}
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pesquisa input[type="text"]{
+    width: 350px;
+    padding: 12px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: none;
+    border:1px solid #fff;
+    background: url(img/icons/search.svg) no-repeat;
+    background-position: 95% 50%; 
+    background-size: 30px;
+}
+
+.pesquisa input[type="text"]:hover{
+    transform: scaleX(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.plano{
+    width: 200px;
+}
+
+.plano i{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.plano button{
+    color: #fff;
+    background-color: #ff4d6d;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.plano button:hover{
+    border: 2px solid #ff4d6d;
+    background-color: transparent;
+    color: #ff4d6d;
+    transition: all 0.2s;
+}
+
+.mais-tocadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    height: 35vh;
+}
+
+.titulo h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+}
+
+.musicas{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.mscs img{
+    border-radius: 15px;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.mscs img:hover{
+    transform: scale(1.09);
+    transition: all 0.3s ease-in-out;
+}
+
+.mscs h4, .mscs p{
+    text-align: center;
+}
+
+.mscs h4{
+    letter-spacing: 1px;
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+.mscs p{
+    font-size: 0.9em;
+    color: rgb(176, 168, 168);
+}
+
+
+
+/*playlist*/
+
+.titulo-playlist-ouvindo{
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 790px;
+}
+
+.titulo-playlist-ouvindo h3{
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+}
+
+.mg{
+    margin-bottom: 10px;
+}
+
+#container-inferior{
+    display: flex;
+    width: 100%;
+}
+
+.playlist{
+    display: flex;
+}
+
+.playlist-musicas{
+    width: 570px;
+}
+
+.musica01{
+    display: flex;
+    height: 74px;
+    margin-top: 10px;
+    padding:10px 5px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    background-color:#190028;
+    /*box-shadow: 0 0 0.7em #3f173f;*/
+}
+
+.musica01 p, .musica01 span{
+    color: #B09F90;
+    font-size: 1em;
+}
+
+.musica01 p, .musica01 h4{
+    width: 50px;
+}
+
+.playlist img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.like{
+    color: red;
+}
+
+
+
+
+/*ouvindo agora*/
+
+.ouvindo-agora{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: #190028;
+    /*box-shadow: 0 0 0.7em #3c096c;*/
+}
+
+
+.msc-ouvindo{
+    background-color: #11001C;
+    width: 250px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    /*box-shadow: 0 0 0.7em #3f173f;*/
+}
+
+.msc-ouvindo img{
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.msc-ouvindo h4{
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+.msc-ouvindo p:nth-child(3){
+    font-size: 0.9em;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.bolinha{
+    background-color: #ff4d6d;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 153px;
+    right: 90px;
+}
+
+.timer{
+    display: flex;
+    gap: 150px;
+}
+
+.timer p{
+    font-size: 0.9em;
+}
+
+.botoes-musica i{
+    margin-top: 8px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

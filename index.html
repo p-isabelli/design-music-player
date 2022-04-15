@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+
+    <script src="https://kit.fontawesome.com/c383e5efc9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="lateral-esquerda">
+        <div class="container-esquerda" id="nav">
+            <div id="botao">
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">☰</button>
+            </div>
+            <img src="img/perfil.jpeg" alt="foto de perfil">
+            <h1>Isabelli Pereira</h1>
+            <small>isabellipereira58@gmail.com</small>
+
+
+            <nav>
+                <p><i class="fa-solid fa-house"></i>Home</p>
+                <p><i class="fa-solid fa-window-maximize"></i></i>Browse</p>
+                <p><i class="fa-solid fa-compact-disc"></i>Album</p>
+                <p><i class="fa-solid fa-user"></i>Artistas</p>
+
+                <h3>Minhas Músicas</h3>
+                <p><i class="fa-solid fa-clock"></i>Mais Recentes</p>
+                <p><i class="fa-solid fa-star"></i>Favoritas</p>
+                <p><i class="fa-solid fa-headphones"></i></i>Minhas Playlists</p>
+            </nav>
+        </div>
+    </div>
+
+    <div id="lateral-direita">
+        <div class="container-direita">
+            <div class="cabeçalho">
+                <div class="pesquisa">
+                    <input type="text" placeholder="Procure por um artista, música, etc">
+                </div>
+                <div class="plano">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-gear"></i>
+                    <button>Renovar plano</button>
+                </div>
+            </div>
+
+            <div class="mais-tocadas">
+                <div class="titulo">
+                    <h2>Músicas mais tocadas</h2>
+                </div>
+
+                <div class="musicas">
+                    <div class="mscs">
+                        <img src="img/blinding.png" alt="blinding lights the weeknd">
+                        <h4>Blinding Lights</h4>
+                        <p>The Weeknd</p>
+                    </div>
+                    <div class="mscs">
+                        <img src="img/ela.jpg" alt="ela e ela Zé Neto e Cristiano">
+                        <h4>Ela e Ela</h4>
+                        <p>Zé Neto e Cristiano</p>
+                    </div>
+                    <div class="mscs">
+                        <img src="img/enemy.jpg" alt="enemy imagine dragons">
+                        <h4>Enemy</h4>
+                        <p>Imagine Dragons</p>
+                    </div>   
+                    <div class="mscs" >
+                        <img src="img/envolver.png" alt="envolver anitta">
+                        <h4>Envolver</h4>
+                        <p>Anitta</p>
+                    </div>   
+                    <div class="mscs">
+                        <img src="img/gatilho.jpg" alt="gatilho matheus e kauan">
+                        <h4>Gatilho</h4>
+                        <p>Matheus e Kauan</p>
+                    </div>   
+                </div>        
+            </div>
+
+            <div class="titulo-playlist-ouvindo">
+                <h3>Playlist</h3>
+                <h3 class="mg">Ouvindo Agora</h3>
+            </div>
+
+          
+            <div id="container-inferior">
+                <div class="playlist">
+                    <div class="playlist-musicas">
+                        <div class="musica01">
+                                <span>01</span>
+                                <img src="img/blinding.png" alt="blinding lights the weeknd">
+                                <i class="fa-solid fa-pause"></i>
+                                <h4>Blinding Lights</h4>
+                                <p>The Weeknd</p>
+                                <p>2:05</p>
+                                <i class="fa-solid fa-heart like"></i>
+                        </div>
+                        <div class="musica01">
+                                <span>02</span>
+                                <img src="img/enemy.jpg" alt="blinding lights the weeknd">
+                                <i class="fa-solid fa-play"></i>
+                                <h4>Enemy</h4>
+                                <p>Imagine Dragons</p>
+                                <p>1:30</p>      
+                                <i class="fa-solid fa-heart like"></i>   
+                        </div>
+                        <div class="musica01">
+                                <span>03</span>
+                                <img src="img/envolver.png" alt="blinding lights the weeknd">
+                                <i class="fa-solid fa-play"></i>
+                                <h4>Envolver</h4>
+                                <p>Anitta</p>
+                                <p>1:09</p>
+                                <i class="fa-solid fa-heart like"></i>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="ouvindo-agora">
+                    <div class="msc-ouvindo">
+                        <img src="img/blinding.png" alt="blinding lights the weeknd">
+                        <h4>Blinding Lights</h4>
+                        <p>The Weeknd</p>
+                        <div class="bolinha"></div>
+                        <div class="timer">
+                            <p>2:05</p>
+                            <p>1:10</p>
+                        </div>
+                        <div class="botoes-musica">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward"></i>
+                            <i class="fa-solid fa-circle-pause"></i>
+                            <i class="fa-solid fa-forward"></i>
+                            <i class="fa-solid fa-repeat"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
